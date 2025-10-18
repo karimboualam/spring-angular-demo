@@ -1,0 +1,30 @@
+<div class="form-container">
+  <h2>Add City</h2>
+
+  <form (ngSubmit)="saveCity()">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="city.name" name="name" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Region</mat-label>
+      <input matInput [(ngModel)]="city.region" name="region" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Population</mat-label>
+      <input
+        matInput
+        type="number"
+        [(ngModel)]="city.population"
+        name="population"
+        required
+      />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">
+      Save
+    </button>
+  </form>
+</div>
