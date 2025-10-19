@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://spring-angular-demo.onrender.com/api/cities' // Corrected URL to point to /api
+  apiUrl: 'https://spring-angular-demo.onrender.com/api' // Corrected URL to point to /api
 };
